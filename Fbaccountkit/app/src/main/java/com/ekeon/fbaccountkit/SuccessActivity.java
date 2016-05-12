@@ -27,8 +27,8 @@ public class SuccessActivity extends AppCompatActivity {
   @OnClick(R.id.btn_logout)
   void onLogout() {
     AccountKit.logOut();
-    Intent initialActivity = new Intent(this, MainActivity.class);
-    this.startActivity(initialActivity);
+    Intent goHomeActivity = new Intent(this, MainActivity.class);
+    this.startActivity(goHomeActivity);
     this.finish();
   }
 
